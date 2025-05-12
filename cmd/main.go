@@ -27,4 +27,5 @@ func main() {
 	dataHandler := pkg.NewDataHandler(config, pkg.NewOutputWrapper(os.Stdout))
 
 	dataHandler.ProcessEvents(events)
+	dataHandler.ComputeReport()
 }
